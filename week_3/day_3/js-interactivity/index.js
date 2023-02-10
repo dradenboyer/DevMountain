@@ -40,3 +40,14 @@ const crossOffMovie = evt => {
 
 document.querySelector('form').addEventListener('submit', addMovie);
 console.log(addMovie)
+
+
+const revealMessage = () => {
+    message.classList.remove('hide')
+    setTimeout(hidemessage, 1000)
+
+}
+
+const hidemessage = () => {
+    message.classList.add('hide')
+}
