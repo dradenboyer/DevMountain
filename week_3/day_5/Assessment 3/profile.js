@@ -36,7 +36,8 @@ const color = document.querySelector('#color', colorButton);
 
 function colorButton(evt){
     evt.preventDefault()
-    
+    color.style.backgroundColor = 'blue';
+
     alert('My favorite color is Blue')
 
 }
