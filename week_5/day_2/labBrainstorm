@@ -1,0 +1,112 @@
+WHAT WE WANT... FEATURES
+
+users can sign into the app with their email and password
+
+users can create recipes with ingredients and instructions
+
+recipes can be marked as public or private
+
+users can view other people’s recipes
+
+ingredients from recipes can be added to user’s grocery lists
+
+users can create their own occasions and assign recipes to occasions
+
+BRAINSTORMING
+
+username/email/password 
+
+recipes text
+user created recipe
+ingredients
+instructions
+public
+private
+
+grocery lists
+
+
+TABLES
+
+users: store all user info
+
+recipies: stores recipies w/ info public/private
+
+grocery lists: stores ingredients
+
+
+ONE-TO-ONE
+    users => grocery list
+    1 user to their 1 grocery list they have
+ONE-TO-MANY
+    users => recipies
+    1 user to many different recipies
+MANY-TO-MANY
+    recipies => ingredients
+    many recipies to many ingredients
+
+
+USERS
+    user_id     integer	      Used int because users will have a #
+    username    varchar(255)  username with text
+    email	    varchar(255)  email with text
+    password	varchar(255)  password with text
+
+RECIPIES
+    recipies_id	    integer	        each recipe will have a # value
+    user_id	        integer	        --
+    public	        boolean	        if public it will = true else = false
+    ingredients	    varchar(500)	ingredients stored as text 
+    instructions	varchar(500)	instructions stored as text
+    occasions	    varchar(500)	occasions stored as text
+    grocerylist	    varchar(500)     grocery list stored as ingredients as text
+    text            varchar         text with unlimited amount of space for the recipe
+
+OCCASIONS
+    occasions_id	integer	    each occasion will have a #
+    user_id	        integer     --
+
+GROCERY LIST
+    grocerylist_id	integer	    each user will have a grocerylist stored as a #
+    user_id	        integer	    --
+
+
+
+SQL CODE
+
+ -- CREATE TABLE users (
+-- 	user_id SERIAL PRIMARY KEY,
+-- 	username Varchar(255),
+--   email Varchar(255),
+--   password  Varchar(255)
+--   );
+  
+-- CREATE TABLE recipies (
+--   recipies_id	SERIAL PRIMARY KEY,	        
+--     user_id	  integer,	        
+--     public	        boolean,	        
+--     ingredients	    varchar(500),	
+--     instructions	varchar(500),	
+--     occasions	    varchar(500),	
+--     grocerylist	    varchar(500),   
+--     text            varchar 
+--   );
+
+-- CREATE TABLE OCCASIONS(
+--     occasions_id	SERIAL PRIMARY KEY,
+--     user_id	        integer 
+--   );
+
+-- CREATE TABLE GROCERYLIST(
+--     grocerylist_id	SERIAL PRIMARY KEY,	    
+--     user_id	        integer	    
+-- );
+
+
+
+
+
+
+
+
+

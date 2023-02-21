@@ -1,0 +1,63 @@
+WHAT WE WANT
+
+users can sign into the app with their email and password
+
+users can follow each other
+
+users can create posts with photos and/or text
+
+users can comment on posts
+
+users can join groups
+
+users can create posts within groups
+
+Brainstorming
+
+username/email/password 
+profile/bio/picture
+
+followers/following
+
+post text
+tags
+user posted 
+photos 
+
+comments 
+user commented 
+
+groups 
+group members
+group posts 
+
+Tables 
+
+Users: store all user info
+
+Posts: store all posts and related info
+PostsTags: keeps track of tags for each post
+Tags: keeps track at the different types of tags for posts
+
+Follow: relationshiops beteween followed users
+
+Photos: link/img and posts is relates to
+
+Comments: holds comments and related info (user/post)
+
+Groups: group id and name 
+
+GroupMembers: names of members for each group
+
+
+one-to-one: 
+    posts<=>photos
+
+one-to-many: users=> following, 
+    users => posts,
+    users => comments,
+
+many-to-many:
+    post <=> Tags
+    users <=> group
+    
