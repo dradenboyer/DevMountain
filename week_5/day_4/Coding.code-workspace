@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "Coding",
+			"path": "../../.."
+		},
+		{
+			"name": "assessment-backend",
+			"path": "../../../../Downloads/assessment-backend"
+		},
+		{
+			"name": "back-end-1",
+			"path": "../../../../Downloads/back-end-1/back-end-1"
+		},
+		{
+			"name": "back-end-2",
+			"path": "../../../../Downloads/back-end-2 (1)/back-end-2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Coding"
+	}
+}
